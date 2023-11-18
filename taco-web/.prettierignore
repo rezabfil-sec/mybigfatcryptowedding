@@ -1,0 +1,8 @@
+package.json
+**/dist/**
+**/types/**
+**/build/**
+CHANGELOG.md
+**/*.sol
+README.md
+/packages/shared/src/contracts/ethers-typechain/
