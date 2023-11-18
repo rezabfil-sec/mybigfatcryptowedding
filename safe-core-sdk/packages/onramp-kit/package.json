@@ -1,0 +1,53 @@
+{
+  "name": "@safe-global/onramp-kit",
+  "version": "1.4.0",
+  "description": "Onramp library",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "test": "jest src --coverage",
+    "format:check": "prettier --check \"*/**/*.{js,json,md,ts}\"",
+    "format": "prettier --write \"*/**/*.{js,json,md,ts}\"",
+    "unbuild": "rm -rf dist",
+    "build": "yarn unbuild && yarn tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/safe-global/safe-core-sdk.git"
+  },
+  "keywords": [
+    "Safe",
+    "Ethereum",
+    "Account Abstraction",
+    "SDK",
+    "Onramp"
+  ],
+  "author": "Safe (https://safe.global)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/safe-global/safe-core-sdk/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/safe-global/safe-core-sdk#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@ethersproject/abi": "^5.7.0",
+    "@ethersproject/address": "^5.7.0",
+    "@ethersproject/bytes": "^5.7.0",
+    "@ethersproject/hash": "^5.7.0",
+    "@monerium/sdk": "^2.3.0",
+    "@safe-global/api-kit": "^1.3.0",
+    "@safe-global/protocol-kit": "^1.3.0",
+    "@safe-global/safe-core-sdk-types": "^2.3.0",
+    "@stripe/crypto": "^0.0.4",
+    "@stripe/stripe-js": "^1.52.0"
+  },
+  "devDependencies": {
+    "events": "^3.3.0",
+    "jest-environment-jsdom": "^29.6.1"
+  }
+}
