@@ -112,17 +112,6 @@ export default function App() {
         {account && <p>Account: {account}</p>}
       </div>
 
-      <h2>Notice</h2>
-      <p>
-        In order to access this demo, make sure to allow-list your wallet
-        address first.
-      </p>
-      <p>
-        Connect with us on our{' '}
-        <a href={'https://discord.gg/threshold'}>Discord server</a> at{' '}
-        <b>#taco</b> channel to get your wallet address allow-listed
-      </p>
-
       <h2>Ritual ID</h2>
       <p>Replace with your own ritual ID</p>
       <input
@@ -155,7 +144,6 @@ export default function App() {
         encrypt={encryptMessage}
         encryptedMessage={encryptedMessage!}
       />
-
       <Decrypt
         enabled={!!encryptedMessage}
         decrypt={decryptMessage}

@@ -57,11 +57,6 @@ export const Decrypt = ({
       console.error('Error:', error.message);
     });
 
-
-    // console.log(encryptedData)
-    // const mkBytes = Buffer.from(encryptedData, 'base64').toString('utf-8');
-    // const mk = ThresholdMessageKit.fromBytes(mkBytes);
-    // decrypt(mk);
   };
 
   const DecryptedMessage = () => {
@@ -97,13 +92,13 @@ export const Decrypt = ({
 
   return (
     <div>
-      <h2>Step 3 - Fetch Encrypted Message</h2>
+      <h2>Step 3 - Show invite or photos to the guests</h2>
       <input
         value={encryptedMessage}
         placeholder="Enter CID of the file"
         onChange={(e) => setEncryptedMessage(e.currentTarget.value)}
       />
-      <button onClick={onDecrypt}>Decrypt</button>
+      <button onClick={onDecrypt}>Decrypt data</button>
       {DecryptedMessage()}
       {DecryptionErrors()}
     </div>

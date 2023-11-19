@@ -64,7 +64,7 @@ export const ConditionBuilder = ({
 
   return (
     <>
-      <h2>Step 1 - Create A Conditioned Access Policy</h2>
+      <h2>Step 1 - Create conditions for the attendees</h2>
       <div>
         <div>
           <h3>Customize your Conditions</h3>
