@@ -1,0 +1,13 @@
+{
+  "name": "sample-dapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@aztec/aztec.js": "^0.15.0"
+  },
+  "devDependencies": {
+    "@aztec/cli": "^0.15.0"
+  }
+}
